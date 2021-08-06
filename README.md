@@ -9,7 +9,8 @@
 * El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
 * ¿Qué versión de python está usando?
 * ¿Qué versión de numpy está usando?
-* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. !
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. 
+
 ![rendimiento](https://user-images.githubusercontent.com/62270417/128532198-ae66b7e1-9a90-44cd-84a6-66894e12ba1f.PNG)
  Se utilizan los 4 procesadores disponibles.
 
