@@ -1,5 +1,11 @@
 # MCOC2021-P0
 
+# Desempeño MATMUL
+
+![Graficos](https://user-images.githubusercontent.com/62270417/128526810-e252aaa7-3dab-4414-8a6b-9f5e272022f3.png)
+
+
+
 # Mi computador principal
 
 * Marca/modelo: HP 14-bp0xx
