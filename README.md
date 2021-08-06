@@ -5,15 +5,15 @@
 ![Graficos](https://user-images.githubusercontent.com/62270417/128526810-e252aaa7-3dab-4414-8a6b-9f5e272022f3.png)
 
 * ¿Cómo difiere del gráfico del profesor/ayudante?
- 
+  En la primera operación, el tiempo de arranque es significativamente mayor, otra diferencia es que entre la matriz de tamaño 50 a 500 la dispercion de los puntos es menor que en el grafico del enunciado, ademas despues de la matriz 500 los tiempos pasan a variar poco entre corridas.
 * ¿A qué se pueden deber las diferencias en cada corrida?
- 
+ Al rendimiento de la memoria, en especial en los puntos que difiere más es porque se esta cambiando la memoria utilizada, pasando de trabajar en los registros a hacer la operacion sobre el cache.
 * El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
- 
+ esto se debe a que la memoria usada depende de la cantiadad de operaciones que se ejecutan, por lo que siempre sera igual para la misma multiplición de matrices (por el tamaño de estas, independiente de los numeros que estas posean), en cambio el tiempo transcurrido depende de varios factores, cantidad de uso del pc, programas abiertos, ya que se ocupa la memoria para hacer los trabajos, por lo que mientras menos memoria se este usando y mayor sea la capacidad de esta, trabajará en un tiempo menor.
 * ¿Qué versión de python está usando?
- !3.9
+ 3.9
 * ¿Qué versión de numpy está usando?
- !1.21.1
+ 1.21.1
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen (screenshot) de su uso de procesador durante alguna corrida para confirmar. 
 
 ![rendimiento](https://user-images.githubusercontent.com/62270417/128532198-ae66b7e1-9a90-44cd-84a6-66894e12ba1f.PNG)
