@@ -1,5 +1,22 @@
 # MCOC2021-P0
 
+# Desempeño de inv
+
+* ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta. 
+
+Numpy => solve(A,I) con la idnetidad como I.
+Scipy => pivoteo y factorizacion en LU
+
+* ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas. 
+ 
+   El paralelismo ayuda en el trabajo de los procesadores, ya que al implementar esta funcion distribuye el trabajo entre todos los procesadores a la vez, por lo que todos trabajan al mismo tiempo, para asi evitar el sobre trabajo de cualquiera de estos. pero de todas formas utiliza el cache primero ya que es memoria a corto plazo para que no acumular memoria.
+   
+*Es importante notar que que al usar la inversa con numpy, no se puede utilizar float16 ni LongDouble, dado que numpy trabaja con 2048 dijitos por lo que no puede procesarlos sin instalar algo externo.
+
+*Tambien notar que los tiempos de ejecucion fueron mas rapidos con overwrite_a = True, dado que trabaja sobre A, en vez de crear una matriz completamente nueva como lo hace overwtrite_a = False.
+
+
+
 # Desempeño MATMUL
 
 ![Graficos](https://user-images.githubusercontent.com/62270417/128526810-e252aaa7-3dab-4414-8a6b-9f5e272022f3.png)
