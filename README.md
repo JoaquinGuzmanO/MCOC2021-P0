@@ -1,5 +1,32 @@
 # MCOC2021-P0
 
+# Desempeño de SOLVE y EIGH
+
+* ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo?
+ El tiempo en que se resuelve Eight y el solve hay una gran diferencia, teniendo este ultimo un tiempo de ejecucion menor. 
+ También hay quu recalcar que dentro del eight hay 2 casos que se escapan con relacion a los otros, estos son el caso 2 y el 5 con casi 6 veces más, por otra parte el tipo de dato no significa un cambio significante en casi todos los tamaños, hay una pequeña variacion al principio con las matrices pequeñas y con las mas grandes.
+ 
+ Para solve, (Apesar de no poder terminar los graficos, pero si obtener los datos) El caso 1 fue el que tuvo el menor tiempo, esto ya que se usa la estrategia mas eficiente para resolver este tipo de ecuaciones.
+ 
+* ¿Qué algoritmo gana (en promedio) en cada caso?
+ Para solve sin contar el caso1, el que mejor funciona es caso 3 con el tipo de dato float.
+ Para eigh el que mejor funciona es el Caso 3 con el tipo de dato float y overwrite True.
+
+* ¿Depende del tamaño de la matriz?
+ Si, ya que todos los metodos trabajan distintos por lo que algunos seran más eficientes on tamaños mas pequeños y otros con mayores tamaños.
+ 
+* ¿A que se puede deber la superioridad de cada opción?
+
+ En el metodo en que trabaja, ya que algunos sobreescriben o trabajan con la identidad.
+
+* ¿Su computador usa más de un proceso por cada corrida?
+
+ Si, trabajan a la vez dado que al ser matrices grandes y metodos complejos, el pc ocupa todos sus procesadores, ya que optimiza el trabajo y no sobrecarga 1.  
+
+* ¿Que hay del uso de memoria (como crece)?
+
+Este aumenta dependiendo del tamaño de la matriz, por loq eu mientras mas grande sea la matriz mayor sera el uso de memoria.
+
 # Desempeño de inv
 
 * ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta. 
@@ -11,9 +38,9 @@ Scipy => pivoteo y factorizacion en LU
  
    El paralelismo ayuda en el trabajo de los procesadores, ya que al implementar esta funcion distribuye el trabajo entre todos los procesadores a la vez, por lo que todos trabajan al mismo tiempo, para asi evitar el sobre trabajo de cualquiera de estos. pero de todas formas utiliza el cache primero ya que es memoria a corto plazo para que no acumular memoria.
    
-*Es importante notar que que al usar la inversa con numpy, no se puede utilizar float16 ni LongDouble, dado que numpy trabaja con 2048 dijitos por lo que no puede procesarlos sin instalar algo externo.
+* Es importante notar que que al usar la inversa con numpy, no se puede utilizar float16 ni LongDouble, dado que numpy trabaja con 2048 dijitos por lo que no puede procesarlos sin instalar algo externo.
 
-*Tambien notar que los tiempos de ejecucion fueron mas rapidos con overwrite_a = True, dado que trabaja sobre A, en vez de crear una matriz completamente nueva como lo hace overwtrite_a = False.
+* Tambien notar que los tiempos de ejecucion fueron mas rapidos con overwrite_a = True, dado que trabaja sobre A, en vez de crear una matriz completamente nueva como lo hace overwtrite_a = False.
 
 
 
