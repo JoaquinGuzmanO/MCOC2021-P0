@@ -55,6 +55,7 @@ plt.xticks(ns[0],lx)
 plt.show()
 
 
-
+print(ns)
+print(dts)
 
 
