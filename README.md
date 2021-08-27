@@ -1,5 +1,25 @@
 # MCOC2021-P0
 
+# Matrices dispersas y complejidad computacional
+
+* Codigo de ensamblaje de la matriz laplaciana (Continua)
+
+```python
+  def laplaciana(N,t= np.double):
+   e = np.eye(N)-np.eye(N,N,1)
+   return t(e+e.T)
+```
+
+* Codigo de ensamblaje de la matriz laplaciana (dispersa)
+* 
+``python
+ def matriz_laplaciana(N, t=np.double):
+  return sparse.eye(N,dtype=t)-sparse.eye(N,N,1,dtype=t)
+```
+
+Para esta entrega se pudo observar claramente las ventajas que se tiene al trabajar con matrices dispersas, ya que estas al estar optimizadas trabajan con mucha menos memoria que al hacerlo con la matriz de manera tradicional, por lo que los tiempois de ejecucion se diminuyen notablemente, haciendo posible multiplicacion de matrices del orden de 10 millones e iunclusiva más en un tiempo corto versus 10000 que se demoraba varios minutos en resolver.
+
+
 # Desempeño de SOLVE y EIGH
 
 * ¿Como es la variabilidad del tiempo de ejecucion para cada algoritmo?
