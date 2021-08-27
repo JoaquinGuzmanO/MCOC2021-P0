@@ -9,10 +9,9 @@
    e = np.eye(N)-np.eye(N,N,1)
    return t(e+e.T)
 ```
-
 * Codigo de ensamblaje de la matriz laplaciana (dispersa)
-* 
-``python
+
+```python
  def matriz_laplaciana(N, t=np.double):
   return sparse.eye(N,dtype=t)-sparse.eye(N,N,1,dtype=t)
 ```
