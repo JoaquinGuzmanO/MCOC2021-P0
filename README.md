@@ -6,7 +6,7 @@
  El tiempo en que se resuelve Eight y el solve hay una gran diferencia, teniendo este ultimo un tiempo de ejecucion menor. 
  También hay quu recalcar que dentro del eight hay 2 casos que se escapan con relacion a los otros, estos son el caso 2 y el 5 con casi 6 veces más, por otra parte el tipo de dato no significa un cambio significante en casi todos los tamaños, hay una pequeña variacion al principio con las matrices pequeñas y con las mas grandes.
  
- Para solve, (Apesar de no poder terminar los graficos, pero si obtener los datos) El caso 1 fue el que tuvo el menor tiempo, esto ya que se usa la estrategia mas eficiente para resolver este tipo de ecuaciones.
+ Para solve, El caso 1 fue el que tuvo el menor tiempo, esto ya que se usa la estrategia mas eficiente para resolver este tipo de ecuaciones.
  
 * ¿Qué algoritmo gana (en promedio) en cada caso?
  Para solve sin contar el caso1, el que mejor funciona es caso 3 con el tipo de dato float.
