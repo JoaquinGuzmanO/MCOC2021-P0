@@ -1,6 +1,16 @@
 # MCOC2021-P0
 
-# Matrices dispersas y complejidad computacional
+# Matrices dispersas y complejidad computacional (Parte 2)
+
+  Para Esta entrega los codigos de fabricacion de la matyriz laplaciana es la misma que en la nterior, del mismo modo no hice un grafico para el tiempo de ensablado, ya que este se vio en entregas pasadas, por lo que me enfoque en comparar el rendimiento de una matriz dispersa con una continua. 
+  
+  Para el solve la diferencia en tiempos fue notable, siendo mucho mas eficiente el que trabaja con una matriz dispersa pudiendo alcanzar N = 10000000, mientras que en la continua a 6000 teniendo estos extremos un tiempo similar.
+
+  Para el inv, la diferencia no fue para nada significativa, ambos se comportaron con tiempos altos para N relativamente bajos, por lo que no es eficiente (en cuanto a tiempo) para este metodo trabajar con matrices dispersas.
+  
+  Trbaje con promedios para los graficos, ya que de esa forma tenia los txt que recicle de las entregas anteriores.
+
+# Matrices dispersas y complejidad computacional (Parte 1)
 
 * Codigo de ensamblaje de la matriz laplaciana (Continua)
 
